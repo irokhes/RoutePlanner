@@ -1,0 +1,17 @@
+D:\Projects\Learning\RoutePlaner\src\RoutePlaner\bin\RoutePlaner.dll
+D:\Projects\Learning\RoutePlaner\src\RoutePlaner\bin\RoutePlaner.pdb
+D:\Projects\Learning\RoutePlaner\src\RoutePlaner\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\Projects\Learning\RoutePlaner\src\RoutePlaner\bin\Microsoft.AspNet.SignalR.Owin.dll
+D:\Projects\Learning\RoutePlaner\src\RoutePlaner\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Projects\Learning\RoutePlaner\src\RoutePlaner\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects\Learning\RoutePlaner\src\RoutePlaner\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Learning\RoutePlaner\src\RoutePlaner\bin\Newtonsoft.Json.dll
+D:\Projects\Learning\RoutePlaner\src\RoutePlaner\bin\Owin.dll
+D:\Projects\Learning\RoutePlaner\src\RoutePlaner\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\Projects\Learning\RoutePlaner\src\RoutePlaner\bin\Microsoft.AspNet.SignalR.Owin.xml
+D:\Projects\Learning\RoutePlaner\src\RoutePlaner\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Projects\Learning\RoutePlaner\src\RoutePlaner\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\Learning\RoutePlaner\src\RoutePlaner\bin\Newtonsoft.Json.xml
+D:\Projects\Learning\RoutePlaner\src\RoutePlaner\obj\Debug\RoutePlaner.csprojResolveAssemblyReference.cache
+D:\Projects\Learning\RoutePlaner\src\RoutePlaner\obj\Debug\RoutePlaner.dll
+D:\Projects\Learning\RoutePlaner\src\RoutePlaner\obj\Debug\RoutePlaner.pdb
