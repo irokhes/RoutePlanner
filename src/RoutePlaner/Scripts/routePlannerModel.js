@@ -1,13 +1,13 @@
 ﻿RoutePlanner.StartPage = function() {
     var self = this;
-    self.app = new RoutePlanner.Application();
+    //self.app = new RoutePlanner.Application();
     self.routes = ko.observableArray([]);
     self.travelMode = ko.observable('DRIVING');
     self.start = ko.observable('boñar, leon');
     self.end = ko.observable('La Vecilla, Leon');
 
     self.calculate = function() {
-        self.app.calculateRoute(self.travelMode, self.start, self.end);
+        self.app.calculateRoute(self.travelMode(), self.start(), self.end());
     };
 
     self.reload = function(route) {

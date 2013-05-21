@@ -7,7 +7,7 @@ using Microsoft.AspNet.SignalR.Hubs;
 
 namespace RoutePlaner
 {
-    [HubName("routerplanner")]
+    [HubName("routeplanner")]
     public class RoutePlannerHub : Hub
     {
         public void refreshRoute(dynamic directions)

@@ -9,8 +9,8 @@ RoutePlanner.Application = function ($containerElement, $directionsElement) {
         zoom: 12,
         center: new google.maps.LatLng(42.866654, -5.323305)
     };
-
-    var directionService = new google.maps.DirectionsService();
+    
+    var directionsService = new google.maps.DirectionsService();
     var directionsRenderer = new google.maps.DirectionsRenderer({ draggable: true });
     directionsRenderer.setMap(new google.maps.Map($containerElement[0], self.options));
     directionsRenderer.setPanel($directionsElement[0]);
@@ -20,10 +20,10 @@ RoutePlanner.Application = function ($containerElement, $directionsElement) {
         var request = {
             origin: start,
             destination: end,
-            travelMode: google.maps.DirectionsTravelModel[travelMode]
+            travelMode: google.maps.DirectionsTravelMode[travelMode]
         };
 
-        directionService.route(request, function(response, status) {
+        directionsService.route(request, function(response, status) {
             if(status == google.maps.DirectionsStatus.OK) {
                 self.clear();
                 self.directionsRenderer.setDirections(response);
@@ -49,6 +49,7 @@ RoutePlanner.Application = function ($containerElement, $directionsElement) {
             longitude: routeLeg.end_location.lng()
         };
         
+        route.waypoints = [];
         for (var i = 0; i < routeLeg.via_waypoints.length; i++) {
             route.waypoints[i] = [routeLeg.via_waypoints[i].lat(), routeLeg.via_waypoints[i].lng()];
         }
@@ -77,7 +78,7 @@ RoutePlanner.Application = function ($containerElement, $directionsElement) {
             waypoints: googleMapWaypoints
         };
 
-        directionService.route(request, function(response, status) {
+        directionsService.route(request, function(response, status) {
             if (status == google.maps.DirectionsStatus.OK) {
                 self.clear();
                 self.directionsRenderer(response);
